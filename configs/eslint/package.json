@@ -1,0 +1,30 @@
+{
+    "name": "@inceptools/eslint-config",
+    "sideEffects": false,
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        ".": "./src/base.mjs",
+        "./next": "./src/next.mjs",
+        "./react": "./src/react.mjs"
+    },
+    "scripts": {
+        "clean": "rm -rf dist && rm -rf .turbo"
+    },
+    "devDependencies": {
+        "eslint-plugin-only-warn": "^1.1.0",
+        "eslint": "^9",
+        "prettier": "^3",
+        "typescript": "^5",
+        "typescript-eslint": "^8",
+        "@next/eslint-plugin-next": "^15",
+        "eslint-plugin-react": "^7",
+        "globals": "^15",
+        "eslint-plugin-unused-imports": "^4",
+        "eslint-plugin-sonarjs": "^3",
+        "eslint-plugin-prettier": "^5",
+        "@typescript-eslint/eslint-plugin": "^8",
+        "@typescript-eslint/parser": "^8"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "@inceptools/tsconfig",
+    "sideEffects": false,
+    "version": "0.0.0",
+    "private": true,
+    "exports": {
+        ".": "./base.json",
+        "./nextjs.json": "./nextjs.json",
+        "./react.json": "./react.json"
+    },
+    "scripts": {
+        "clean": "rm -rf dist && rm -rf .turbo"
+    },
+    "devDependencies": {
+        "tsconfig-paths": "^4.1.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

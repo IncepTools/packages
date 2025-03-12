@@ -1,0 +1,27 @@
+export const constants = {
+	INFRA: {
+		APP_NAMES: {
+			API_APP: "api-app",
+		},
+		HEALTH_CHECKS: {
+			SHUTDOWN_CHECK: "shutDownCheck",
+			DB_SERVICES_STATUS_CHECK: "dbServicesStatusCheck",
+		},
+		SHUTDOWN_EVENT: "SHUTDOWN_EVENT",
+		LIVENESS: {
+			FILE_PATH: "liveness/liveness.txt",
+		},
+	},
+	DB_SERVICES: {
+		MONGO_DB_SERVICE: {
+			PROVIDER_NAME: "MONGO_DB_SERVICE",
+			PROVIDER_MASTER_NAME: "MONGO_MASTER_SERVICE",
+		},
+		POSTGRES_DB_SERVICE: {
+			PROVIDER_NAME: "POSTGRES_DB_SERVICE",
+		},
+		REDIS_SERVICE: {
+			PROVIDER_NAME: "REDIS_SERVICE",
+		},
+	},
+};

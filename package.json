@@ -1,0 +1,31 @@
+{
+    "name": "inceptools-monorepo",
+    "version": "0.0.0",
+    "description": "The IncepTools Monorepo is a modular package system designed to streamline backend and database integrations for scalable applications.",
+    "author": "Ishan Singla<is.ishan.singla@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "turbo start --filter=@inceptools/*",
+        "build": "turbo build --filter=@inceptools/*",
+        "dev": "env-cmd -f .env.local turbo dev",
+        "lint": "turbo lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "publish": "turbo run build lint && turbo publish"
+    },
+    "devDependencies": {
+        "prettier": "^3.0.0",
+        "turbo": "^2.4.0",
+        "typescript": "^5.0.0",
+        "env-cmd": "^10"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "packageManager": "yarn@1.22.22",
+    "workspaces": [
+        "examples/*",
+        "packages/*",
+        "configs/*"
+    ]
+}
